@@ -125,6 +125,13 @@ input::placeholder {
     margin-left: 3em;
 }
 
+.title h1{
+    font-family: Georama;
+    margin-left: 1.3em;
+    width: 320px;
+    background-color: #6239D6;
+}
+
 @media only screen and (max-width: 1000px) {
     .controls {
         width: 100%;
