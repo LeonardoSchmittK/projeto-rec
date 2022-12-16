@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <!-- Icons -->
+
+
+    <script src="https://kit.fontawesome.com/cf41a05b95.js" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Georama:ital,wght@0,100;0,200;0,800;0,900;1,100&display=swap" rel="stylesheet"> 
+
+
+    <title>Lista de afazeres 🗒️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="variables.css">
+</head>
+<body>
+    <div>
+        <header class="header">
+            <nav>
+                <ul>
+                    <li>
+                          <a>
+                            <img src="./img/logo.png" alt="logo image">
+                         </a>
+                    </li>
+                    <li>
+                        <a href="./index.html">
+                          Home
+                       </a>
+                  </li>
+                  <li>
+                    <a href="./Lista.html">
+                      Lista
+                   </a>
+              </li>
+                </ul>
+
+                <ul class="social-media">
+                    <li>
+                      <a href="https://github.com/LeonardoSchmittK">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/leonardo-schmitt-5743501b0/">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                  </ul>
+              
+            </nav>
+            <p class="historico">Home > Lista</p>
+        </header>
+        <section class="controls">
+            <label for="todo-item">Afazer:</label>
+            <input type="text" class="todo-input"  name="todo-item" id="" placeholder="Tomar café">
+            <button onclick="checkForStorageExistence()">ADICIONAR</button>
+        </section>
+         
+        <main class="list-container">
+
+        </main>
+    </div>
+   
+    <script src="./index.js"></script>
+    
+</body>
+</html>
