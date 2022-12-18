@@ -50,15 +50,21 @@ function checkForStorageExistence() {
 }
 
 function checkIfTheItemAlreadyExists(val){
-    // let counter = 0;
-    // todoListStorage.map((it)=>{
-    //     if(it.item === val) {
-    //         counter=counter+1
-    //     }
-    // })
-    // if(!counter){
-    // }
-    addItemToList(val)
+    let exists = false;
+    document.querySelectorAll(".list-container h1").forEach((item)=>{
+        if(item.innerHTML===val){
+            item.className+=" stand-out"
+            exists = true
+
+            setTimeout(()=>{
+                item.className=""
+            },500)
+        }
+    })
+    if(exists===false){
+        addItemToList(val)
+
+    }
     
 }
 

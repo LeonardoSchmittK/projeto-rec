@@ -42,6 +42,11 @@
     overflow-x:hidden;
 }
 
+.list-container .stand-out {
+
+    animation: stand-out 500ms linear;
+}
+
 .list-container {
     display: flex;
     flex-direction: column;
@@ -176,3 +181,11 @@ input::placeholder {
 
   }
 
+
+
+@keyframes stand-out {
+    to {
+        background-color: #6239D6;
+        transform: scale(1.1);
+    }
+}
