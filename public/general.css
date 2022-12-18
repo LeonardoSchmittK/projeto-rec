@@ -5,6 +5,7 @@
     border: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
+    
 }
 
 ol,ul{
@@ -18,5 +19,5 @@ a {
 
 body {
     background-color: var(--main-color);
-
+    overflow: hidden;
 }

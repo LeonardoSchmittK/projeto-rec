@@ -132,6 +132,16 @@ input::placeholder {
     background-color: #6239D6;
 }
 
+.number-of-items {
+    position: absolute;
+    font-size: 100em;
+    right: 0;
+    bottom:-0.2em;
+    pointer-events: none;
+    color:var(--green-color);
+    opacity: 0.06;
+}
+
 @media only screen and (max-width: 1000px) {
     .controls {
         width: 100%;

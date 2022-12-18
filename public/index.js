@@ -1,4 +1,5 @@
 let todoListAlreadyExists = false;
+const numberOfItemsEl = document.querySelector(".number-of-items")
 const textInput = document.querySelector("input[type=text].todo-input")
 textInput.focus()
 let textInputValue = textInput.value
@@ -10,6 +11,7 @@ if(!localStorage.todolist){
 const todoListStorage = JSON.parse(localStorage.todolist)
 
 function printStoredList(){
+    numberOfItemsEl.innerHTML=todoListStorage.length
     todoListContainer.innerHTML=""
     todoListStorage.map((todoItem,id)=>{
           todoListContainer.innerHTML+=`
@@ -42,6 +44,7 @@ function checkForStorageExistence() {
         checkIfTheItemAlreadyExists(textInputValue)
 
     }
+    numberOfItemsEl.innerHTML=todoListStorage.length
 
 
 }
@@ -63,16 +66,21 @@ function addItemToList(val){
     todoListStorage.push({item:val,checked:false})
     localStorage.todolist = JSON.stringify([...todoListStorage])
     printStoredList(todoListStorage)
+    numberOfItemsEl.innerHTML=todoListStorage.length
+
 }
 
 function removeItem(id){
     todoListStorage.splice(id,1);
     localStorage.todolist = JSON.stringify([...todoListStorage])
     printStoredList(todoListStorage)
+    numberOfItemsEl.innerHTML=todoListStorage.length
+
 }
 
 function markItem(id){
     todoListStorage[id].checked = true
     localStorage.todolist = JSON.stringify([...todoListStorage])
     printStoredList(todoListStorage)
+
 }
